@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <title>Ruby on Rails: Welcome aboard</title>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <script type="text/javascript" src="/js/glMatrix-0.9.5.min.js"></script>
+    <script type="text/javascript" src="/js/utils.js"></script>
+    <script id="shader-fs" type="x-shader/x-fragment">
+        precision mediump float;
+
+        varying vec4 vColor;
+
+        void main(void) {
+            gl_FragColor = vColor;
+        }
+    </script>
+
+    <script id="shader-vs" type="x-shader/x-vertex">
+        attribute vec3 aVertexPosition;
+        attribute vec4 aVertexColor;
+
+        uniform mat4 uMVMatrix;
+        uniform mat4 uPMatrix;
+
+        varying vec4 vColor;
+
+        void main(void) {
+            gl_Position = uPMatrix * uMVMatrix * vec4(aVertexPosition, 1.0);
+            vColor = aVertexColor;
+        }
+    </script>
+    <script type="text/javascript" src='/js/draw.js'></script>
+  </head>
+  <body>
+    <div id='header'>
+      <div class='center'>
+        <div class='rightShadow small line' id='logo'  onclick='webGLStart();'></div><div class='rightShadow small line' id='bluePoint'></div>
+        <div class='rightShadow line' id='searchBox'><input id='search' placeholder='Search or type a comand'></div>
+        <div class='line' id='topMenu'>
+          <a href='#'>Explore</a>
+          <a href='#'>Gist</a>
+          <a href='#'>Blog</a>
+          <a href='#'>Help</a>
+        </div>
+        <div id='account' class='line'>
+          <div id='avatar' class='line'></div>
+          <div id='login' class='line'><a href='#'>gaar4ica</a></div>
+          <div id='add' class='line'></div><div id='options' class='line'></div><div id='exit' class='line'></div>
+        </div>
+      </div>
+    </div>
+    <div style='clear:both'></div>
+    <div id='page'>
+      <div class='center'>
+        <div id='leftColumn' class='line'>
+          <div id='userAvatar'></div>
+          <div class='medium bottomShadow' id='userLogin'><a href='#'>lighthouselc</a></div>
+          <div class='medium bottomShadow' id='regDate'>Joined on: <a href='#'>Mar 07, 2013</a></div>
+          <div class='medium bottomShadow' id='social'>
+            <div id='followers' class='line'><a href='#'>0</a>followers</div>
+            <div id='starred' class='line'><a href='#'>0</a>starred</div>
+            <div id='following' class='line'><a href='#'>0</a>following</div>
+          </div>
+        </div>
+        <div id='content'>
+          <div id='navButtons'>
+            <div class='navButton line' id='contributions'><a href='#'>Contributions</a></div>
+            <div class='navButton line active' id='repos'><a href='#'>Repositories</a></div>
+            <div class='navButton line' id='pa'><a href='#'>Public Activity</a></div>
+            <div id='socButons'>
+              <button id='someShit'></button>
+              <button id='follow'>Follow</button>
+            </div>
+          </div>
+          <div id='mainPanel'>
+            <div id='filter'>
+              <div id='filterForm'>
+                <input placeholder='Filter...'>
+                <div id='filterSelect'>
+                  <a href='#' class='active'>All</a>
+                  <a href='#'>Sources</a>
+                  <a href='#'>Forkes</a>
+                  <a href='#'>Mirrors</a>
+                </div>
+              </div>
+            </div>
+            <div id='empty'>Lighhouselc doesn't has any public repositories.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <canvas id="popUp" style="border: none;" width="500" height="500"></canvas>
+  </body>
+</html>

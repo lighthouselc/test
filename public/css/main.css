@@ -1,0 +1,234 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
+  font-size: 13px;
+}
+div .center {
+  width: 1000px;
+  margin: auto;
+  position: relative;
+}
+div .rightShadow {
+  border-right: 1px #e5e5e5 solid;
+}
+div .small {
+  height: 40px;
+  width: 40px;
+}
+div .medium {
+  height: 52px;
+  width: 224px;
+  border-bottom: 1px #dddddd solid;
+}
+div .line {
+  float: left;
+}
+div .navButton {
+  width: 120px;
+  height: 14px;
+  padding: 9px;
+  border-bottom: 1px #dddddd solid;
+}
+div .navButton.active {
+  border: 1px #dddddd solid;
+  border-bottom: 1px white solid !important;
+  border-radius: 4px;
+}
+
+#header {
+  background: url('/images/header_bg.png');
+  height: 40px;
+  width: 100%;
+  border-bottom: 1px #e5e5e5 solid;
+}
+#header div {
+  height: 40px;
+}
+#logo {
+  background: url('/images/logo_small.png');
+}
+#bluePoint {
+  width: 36px;
+  background: url('/images/blue_point.png');
+}
+#searchBox {
+  width: 234px;
+  height: 40px;
+  background: url('/images/search.png') right center no-repeat;
+}
+#search {
+  width: 198px;
+  height: 24px;
+  margin: 8px 5px;
+  padding: 3px;
+  background: url('/images/search_input.png') right center no-repeat;
+  background-color: white;
+  border: 1px #e5e5e5 solid;
+  border-radius: 2px;
+}
+#topMenu {
+  padding: 11px 5px;
+}
+#topMenu a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #494949;
+  margin: 5px; 
+}
+#account {
+  float: right;
+}
+#avatar {
+  width: 22px;
+  background: url('/images/avatar.png') center center no-repeat;
+}
+#login {
+  padding: 11px 5px;
+}
+#login a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #494949;        
+}
+#add {
+  width: 20px;
+  padding: 0 4px;
+  background: url('/images/book.png') center center no-repeat;
+}
+#options {
+  width: 22px;
+  padding: 0 4px;
+  background: url('/images/options.png') center center no-repeat;
+}
+#exit {
+  width: 20px;
+  padding: 0 4px;
+  background: url('/images/exit.png') center center no-repeat;
+}      
+
+#page {
+  padding: 20px 0;
+}
+#leftColumn {
+  width: 240px;
+}
+#userAvatar {
+  width: 224px;
+  height: 224px;
+  border: 2px #dddddd solid;
+  background: url('/images/koteyka.png') center center no-repeat;
+}
+#userLogin {
+  padding: 12px 0;
+  height: 28px;
+}
+#userLogin a {
+  font-size: 18pt;
+  color: #495961;
+  text-decoration: none;
+}
+#regDate {
+  color: #a39b99;
+  padding: 20px 0 20px 25px;
+  height: 13px; width: 195px;
+  background: url('/images/clock.png') left center no-repeat;
+}
+#regDate a {
+  color: #495961;
+  text-decoration: none;
+}
+#social div {
+  font-size: 8pt;
+  width: 60px;
+  padding-right: 10px;
+  color: #a39b99;
+} 
+#social a {
+  color: #495961;
+  font-size: 18pt;
+  text-decoration: none;
+  display: block;        
+}
+#content {
+  width: 100%;
+}
+#navButtons {
+  width: 100%;
+  padding-left: 15px;
+  height: 32px;
+}
+#navButtons a {
+  color: #495961;
+  text-decoration: none;
+  margin-left: 20px;        
+}
+#contributions {
+  background: url('/images/contributions.png') 5px center no-repeat;
+}
+#repos {
+  background: url('/images/repos.png') 5px center no-repeat;
+}
+#pa {
+  background: url('/images/pa.png') 5px center no-repeat;
+}
+#socButons {
+  border-bottom: 1px #dddddd solid;
+  height: 32px;
+  margin-left: 640px;
+  margin-right: 12.3px;
+}
+#socButons button {
+  background: url('/images/button_bg.png');
+  margin: 6px;
+  border: 1px #dddddd solid;
+  border-radius: 1px;
+  float: right;
+}
+#follow {
+  width: 85px;
+  background: url('/images/follow_button.png') left center no-repeat;
+}
+#someShit {
+  width: 38px;
+  background: url('/images/junk_button.png') left center no-repeat;        
+}
+#mainPanel {
+  margin-left: 240px;
+}
+#filter {
+  border-bottom: 1px #dddddd solid;
+  height: 55px;
+}
+#filterSelect {
+  padding: 9px 0;
+  float: right;
+}
+#filterForm {
+  padding: 11px 0;
+}
+#filterForm input {
+  height: 32px;
+  width: 250px;
+  border: 1px #dddddd solid;
+  padding-left: 8px;
+  border-radius: 2px;
+}
+#filterSelect a {
+  text-decoration: none;
+  margin: 2px;
+  color: #4183c4;
+}
+#filterSelect .active {
+  color: black;
+}
+#empty {
+  margin-top: 20px;
+  background-color: #fafafa;
+  height: 45px;
+  text-align: center;
+  border: 1px #dddddd solid;
+  border-radius: 5px;
+  padding-top: 25px;
+  font-size: 12pt;
+}
